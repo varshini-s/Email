@@ -11,9 +11,9 @@ public class Email
 	{
 		System.out.println("welcome to email problem");
 
-		String regularExpression="^[a-z0-9]+([+[.]_-][a-z0-9]+){0,1}@[a-z0-9]+[a-z]{2,4}$";
+		String regularExpression="^[a-z0-9]+([+[.]_-][a-z0-9]+){0,1}@[a-z0-9]+[.][a-z]{2,4}([.][a-z]{2,4}){0,1}$";
 
-		
+
 		String[] validMails = {"abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net",
 				"abc.100@abc.com.au","abc@1.com","abc@gmail.com.com","abc+100@gmail.com"};
 
@@ -42,7 +42,7 @@ public class Email
 				allValidMails=0;
 			}
 		}
-		
+
 		System.out.println("--------------------");
 
 		for(int index=0;index<invalidMails.length;index++)
@@ -64,7 +64,7 @@ public class Email
 
 			}
 		}
-		
+
 
 		if(allValidMails==1)
 		{
@@ -77,7 +77,7 @@ public class Email
 		}
 
 
-		
+
 
 
 	}

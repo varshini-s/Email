@@ -24,7 +24,7 @@ public class Email
 		int allValidMails=1,allInvalidMails=1;
 
 
-		for(int index=0;index<validMails.length;index++)
+		for(int index=2;index<validMails.length;index++)
 		{
 
 			String mailID=validMails[index];
@@ -43,6 +43,28 @@ public class Email
 			}
 		}
 		
+		System.out.println("--------------------");
+
+		for(int index=0;index<invalidMails.length;index++)
+		{
+
+			String mailID=invalidMails[index];
+			Pattern pattern = Pattern.compile(regularExpression);
+			Matcher matcher = pattern.matcher(mailID);
+			boolean matchFound = matcher.find();
+
+			if(matchFound)
+			{
+				System.out.println(mailID+": This mail should  not be valid");
+				allInvalidMails=0;
+			} 
+			else 
+			{
+				continue;
+
+			}
+		}
+
 		
 
 

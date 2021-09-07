@@ -64,6 +64,18 @@ public class Email
 
 			}
 		}
+		
+
+		if(allValidMails==1)
+		{
+			System.out.println("All valid mail id verified");
+		}
+
+		if(allInvalidMails==1)
+		{
+			System.out.println("All Invalid mail id verified");
+		}
+
 
 		
 

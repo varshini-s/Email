@@ -24,7 +24,7 @@ public class Email
 		int allValidMails=1,allInvalidMails=1;
 
 
-		for(int index=2;index<validMails.length;index++)
+		for(int index=0;index<validMails.length;index++)
 		{
 
 			String mailID=validMails[index];

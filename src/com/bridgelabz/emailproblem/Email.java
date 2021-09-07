@@ -11,9 +11,9 @@ public class Email
 	{
 		System.out.println("welcome to email problem");
 
+		String regularExpression="^[a-z0-9]+$";
 
 		
-
 		String[] validMails = {"abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net",
 				"abc.100@abc.com.au","abc@1.com","abc@gmail.com.com","abc+100@gmail.com"};
 
@@ -24,6 +24,7 @@ public class Email
 		int allValidMails=1,allInvalidMails=1;
 
 
+		
 		
 
 

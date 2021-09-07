@@ -24,6 +24,24 @@ public class Email
 		int allValidMails=1,allInvalidMails=1;
 
 
+		for(int index=0;index<validMails.length;index++)
+		{
+
+			String mailID=validMails[index];
+			Pattern pattern = Pattern.compile(regularExpression);
+			Matcher matcher = pattern.matcher(mailID);
+			boolean matchFound = matcher.find();
+
+			if(matchFound) 
+			{
+				continue;
+			} 
+			else 
+			{
+				System.out.println(mailID+": This mail should be valid");
+				allValidMails=0;
+			}
+		}
 		
 		
 

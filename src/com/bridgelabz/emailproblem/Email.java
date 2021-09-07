@@ -11,7 +11,7 @@ public class Email
 	{
 		System.out.println("welcome to email problem");
 
-		String regularExpression="^[a-z0-9]+@[a-z0-9]+[a-z]{2,4}$";
+		String regularExpression="^[a-z0-9]+([+[.]_-][a-z0-9]+){0,1}@[a-z0-9]+[a-z]{2,4}$";
 
 		
 		String[] validMails = {"abc@yahoo.com","abc-100@yahoo.com","abc.100@yahoo.com","abc111@abc.com","abc-100@abc.net",
